@@ -1,0 +1,52 @@
+.container {
+    height: 400px; /* Altura del contenedor */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento */
+    border: 2px solid black;
+  }
+  
+  .grid {
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Ocho columnas con tamaño igual */
+    grid-auto-rows: 50px; /* Altura predeterminada de las filas */
+    grid-auto-flow: column; /* Alinea los elementos en una sola columna */
+  }
+  
+  .item {
+    border: 2px solid black;
+    /* Estilos de los elementos dentro de la cuadrícula */
+  }
+  
+  .item:nth-child(1) {
+    order: 1; /* Establece el primer elemento en la esquina superior izquierda */
+  }
+  
+  .item:nth-child(2) {
+    order: 9; /* Establece el segundo elemento a la derecha del primero */
+  }
+  
+  /* Y así sucesivamente */
+  .item:nth-child(3) {
+    order: 17;
+  }
+  
+  .item:nth-child(4) {
+    order: 25;
+  }
+  
+  .item:nth-child(5) {
+    order: 2;
+  }
+  
+  .item:nth-child(6) {
+    order: 10;
+  }
+  
+  .item:nth-child(7) {
+    order: 18;
+  }
+  
+  .item:nth-child(8) {
+    order: 26; /* Establece el último elemento en la esquina inferior derecha */
+  }
+  

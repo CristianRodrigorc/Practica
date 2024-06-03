@@ -1,0 +1,19 @@
+.degradiv{
+    width: 400px;
+    height:200px;
+    font-size: 40px;
+    background-image: linear-gradient(to  right, red, yellow, green, blue, magenta);
+}
+
+.imgdiv{
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.imgdiv img{
+    width: 200px;
+    float: left;
+}
